@@ -3,7 +3,7 @@ import 'package:dart_application/entity/agent.dart';
 import 'package:dart_application/entity/indisponibilite.dart';
 
 // `PRESENT`, `ABSENT`, et `INDISPONIBLE` sont les états possibles d'un tour pour un agent.
-enum Statut { PRESENT, ABSENT, INDISPONIBLE }
+enum Statut { En_ATTENTE, PRESENT, ABSENT, INDISPONIBLE }
 
 // La classe `Tour` modélise une rotation ou un tour dans le système, où un agent est désigné pour offrir le petit-déjeuner.
 class Tour {

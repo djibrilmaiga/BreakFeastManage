@@ -5,8 +5,7 @@ import 'package:dart_application/entity/agent.dart';
 class Admin extends Agent {
   // Constructeur de la classe `Admin`.
   Admin({
-    required String
-    nom, // Le nom de famille de l'administrateur, hérité de `Agent`.
+    required String nom,
     required String prenom,
     required String email,
     required String motDePasse,
