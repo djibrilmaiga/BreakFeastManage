@@ -3,37 +3,48 @@ import 'dart:io';
 
 import '../models/agent.dart';
 
-class Agentservice {
+class AgentService {
   // methode pour faire l'authentification d'un agent
 
-  Future authentification (String email, String mot_de_passe) async{
-  File file = File("usersdata.json");
+  static authentification (String? email, String? motDePasse) async{
 
+  File file = File("agents.json");
   // prendre les entrer de l'utilisateur
-  print("Veillez entrer votre Email:");
-  String? emailAgent = stdin.readLineSync();
-  print("Veiller saisir votre mot de passe:");
-  String? motDePasse = stdin.readLineSync();
-
+  // print("Veillez entrer votre Email:");
+  // String? emailAgent = stdin.readLineSync();
+  // print("Veiller saisir votre mot de passe:");
+  // String? motDePasse = stdin.readLineSync();
   List <dynamic> agents = [];
   // faire la lecture des informations de l'agent dans le fichier json
-  if (await file.exists()){
+  if (await file.exists())
+  {
     final contenu = await file.readAsString();
-    final Map <String, dynamic> dataJson = jsonDecode(contenu);
+    Map<String, dynamic> dataJson = jsonDecode(contenu);
     agents = dataJson["agents"];
-
-  }
-
-  // boucle pour verifier si les entrer corresponde au contenu du json
-
-  for (var agent in agents){
-    if (emailAgent == agent["email"] && motDePasse == agent["mot_de_passe"] && agent["estActif"] == true){
-      return true;
+    // boucle pour verifier si les entrer corresponde au contenu du json
+    bool exist = false;
+    for (var agent in agents)
+    {
+      if ((email == agent["email"]) && (motDePasse == agent["mot_de_passe"]) && (agent["estActif"] == true))
+      {
+        exist = true;
+        break; 
+      }
     }
-    else{
-      return false;
+    if(exist)
+    {
+      print('Connection reussie');
     }
-  }
+    else
+    {
+      print("Connection echouée");
+    }
+    return exist;
     
+  }
+  else{
+    print("le fichier n'existe pas");
+  }
+  
   }
 }

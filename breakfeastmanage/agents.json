@@ -1,0 +1,39 @@
+{
+  "agents": [
+    {
+      "nom": "Diallo",
+      "prenom": "Amadou",
+      "email": "amadou.diallo@example.com",
+      "mot_de_passe": "motdepasse1",
+      "estActif": true
+    },
+    {
+      "nom": "Traoré",
+      "prenom": "Awa",
+      "email": "awa.traore@example.com",
+      "mot_de_passe": "motdepasse2",
+      "estActif": true
+    },
+    {
+      "nom": "Koné",
+      "prenom": "Issa",
+      "email": "issa.kone@example.com",
+      "mot_de_passe": "motdepasse3",
+      "estActif": false
+    },
+    {
+      "nom": "Ndiaye",
+      "prenom": "Fatou",
+      "email": "fatou.ndiaye@example.com",
+      "mot_de_passe": "motdepasse4",
+      "estActif": true
+    },
+    {
+      "nom": "Ouattara",
+      "prenom": "Mohamed",
+      "email": "mohamed.ouattara@example.com",
+      "mot_de_passe": "motdepasse5",
+      "estActif": false
+    }
+  ]
+}
