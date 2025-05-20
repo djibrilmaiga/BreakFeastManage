@@ -6,7 +6,7 @@ import '../models/agent.dart';
 class Agentservice {
   // methode pour faire l'authentification d'un agent
 
-  String? authentification (String Email, String mot_de_passe) async{
+  Future authentification (String email, String mot_de_passe) async{
   File file = File("usersdata.json");
 
   // prendre les entrer de l'utilisateur
@@ -28,10 +28,10 @@ class Agentservice {
 
   for (var agent in agents){
     if (emailAgent == agent["email"] && motDePasse == agent["mot_de_passe"] && agent["estActif"] == true){
-      print("Les informations fournies sont correctes!");
+      return true;
     }
     else{
-      print("Echec! Veillez saisir un email et un mot de passe valide");
+      return false;
     }
   }
     
