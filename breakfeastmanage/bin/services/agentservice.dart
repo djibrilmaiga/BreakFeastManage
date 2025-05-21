@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import '../models/agent.dart';
-
 class AgentService {
   // methode pour faire l'authentification d'un agent
 
