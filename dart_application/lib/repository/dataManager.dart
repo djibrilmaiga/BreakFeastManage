@@ -10,14 +10,14 @@ import 'package:dart_application/entity/tour.dart';
 // La classe `DataManager` est une classe utilitaire pour gérer la persistance des données dans des fichiers JSON.
 class DataManager {
   // Ces constantes définissent les chemins/noms des fichiers JSON où les données seront stockées.
-  static const String agentsFile = './repository/agents.json'; // Fichier pour les agents.
+  static const String agentsFile = 'lib/repository/agents.json'; // Fichier pour les agents.
   static const String rotationsFile =
-      './repository/rotations.json'; // Fichier pour les rotations.
+      'lib/repository/rotations.json'; // Fichier pour les rotations.
   static const String jourFeriesFile =
-      './repository/jourFeries.json'; // Fichier pour les jours fériés.
-  static const String toursFile = './repository/tours.json'; // Fichier pour les tours.
+      'lib/repository/jourFeries.json'; // Fichier pour les jours fériés.
+  static const String toursFile = 'lib/repository/tours.json'; // Fichier pour les tours.
   static const String notificationsFile =
-      './repository/notifications.json'; // Fichier pour les notifications.
+      'lib/repository/notifications.json'; // Fichier pour les notifications.
 
   // Méthode statique pour sauvegarder une liste de données dans un fichier JSON.
   static Future<void> saveToFile(
