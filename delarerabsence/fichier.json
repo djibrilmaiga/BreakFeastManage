@@ -1,0 +1,36 @@
+{
+    "agents":[
+        {"nom":"seydou","prenom":"dembele","email":"dem@gmail.com","mot_de_passe":"demcodes","estActive":true,"estAdmin":true},
+        {"nom":"ganga","prenom":"maiga","email":"ganga@gmail.com","mot_de_passe":"ganga","estActive":true,"estAdmin":false},
+        {"nom":"Kadiatou","prenom":"Tall","email":"tall@gmail.com","mot_de_passe":"1234","estActive":true,"estAdmin":false,"estActif":false},
+        {"nom":"Hamza","prenom":"SanMo","email":"hamza@gmail.com","mot_de_passe":"1234","estActive":true,"estAdmin":false},
+        {"nom":"sekou","prenom":"keita","email":"sekou@gmail.com","mot_de_passe":"sekou","estActive":true,"estAdmin":false},
+        {"nom":"Amadou","prenom":"Diallo","email":"ama@gmail.com","mot_de_passe":"1234","estActive":true,"estAdmin":false}
+        ],
+    "rotations":[
+            {"agent":{"nom":"seydou","prenom":"dembele","email":"dem@gmail.com","mot_de_passe":"demcodes","estActive":true,"estAdmin":true}
+            ,"date":"2025-05-16T23:54:47.864150","status":"En attente du tour","agentIndex":0},
+            {"agent":{"nom":"Kadiatou","prenom":"Tall","email":"tall@gmail.com","mot_de_passe":"1234","estActive":false,"estAdmin":false},
+            "date":"2025-05-30T23:54:47.864150","status":"En attente du tour","agentIndex":1},
+            {"agent":{"nom":"Hamza","prenom":"SanMo","email":"hamza@gmail.com","mot_de_passe":"1234","estActive":true,"estAdmin":false},
+            "date":"2025-06-06T23:54:47.864150","status":"En attente du tour","agentIndex":2},
+            {"agent":{"nom":"sekou","prenom":"keita","email":"sekou@gmail.com","mot_de_passe":"sekou","estActive":true,"estAdmin":false},
+            "date":"2025-06-13T23:54:47.864150","status":"En attente du tour","agentIndex":3},
+            {"agent":{"nom":"Amadou","prenom":"Diallo","email":"ama@gmail.com","mot_de_passe":"1234","estActive":true,"estAdmin":false},
+            "date":"2025-06-20T23:54:47.864150","status":"En attente du tour","agentIndex":4},
+            {"agent":{"nom":"ganga","prenom":"maiga","email":"ganga@gmail.com","mot_de_passe":"ganga","estActive":true,"estAdmin":false},
+            "date":"2025-06-27T23:54:47.864150","status":"En attente du tour","agentIndex":5}
+        ],
+    "Absences": [
+    {
+      "agent": {"email": "ama@gmail.com" },
+      "date": "2025-05-16T23:54:47.864150",
+      "motif": "mariage"
+    },
+    {
+      "agent": {"email": "fatou@gmail.com" },
+      "date": "2025-06-01T08:00:00.000",
+      "motif": "maladie"
+    }
+  ]
+}
