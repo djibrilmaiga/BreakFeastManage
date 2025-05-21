@@ -1,0 +1,12 @@
+{
+  "agents": [
+    {
+      "nom": "Amadou",
+      "prenom": "Diallo",
+      "email": "jimlecracken13@gmail.com",
+      "mot_de_passe": "jevaispasapplaudir",
+      "estActif": false,
+      "estAdmin": false
+    }
+  ]
+}

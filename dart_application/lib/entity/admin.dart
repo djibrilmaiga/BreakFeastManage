@@ -5,14 +5,9 @@ import 'package:dart_application/entity/agent.dart';
 class Admin extends Agent {
   // Constructeur de la classe `Admin`.
   Admin({
-    required String nom,
-    required String prenom,
-    required String email,
-    required String motDePasse,
-  }) : super(
-         nom: nom,
-         prenom: prenom,
-         email: email,
-         motDePasse: motDePasse,
-       ); // Appelle le constructeur de la classe parente (`Agent`) avec les mêmes paramètres.
+    required super.nom,
+    required super.prenom,
+    required super.email,
+    required super.motDePasse,
+  }); // Appelle le constructeur de la classe parente (`Agent`) avec les mêmes paramètres.
 }
