@@ -4,14 +4,14 @@ import 'dart:io';
 class AgentService {
   // methode pour faire l'authentification d'un agent
 
-  static authentification (String? email, String? motDePasse) async{
+  static authentification () async{
 
   File file = File("agents.json");
   // prendre les entrer de l'utilisateur
-  // print("Veillez entrer votre Email:");
-  // String? emailAgent = stdin.readLineSync();
-  // print("Veiller saisir votre mot de passe:");
-  // String? motDePasse = stdin.readLineSync();
+  print("Veillez entrer votre Email:");
+  String? emailAgent = stdin.readLineSync();
+  print("Veiller saisir votre mot de passe:");
+  String? motDePasse = stdin.readLineSync();
   List <dynamic> agents = [];
   // faire la lecture des informations de l'agent dans le fichier json
   if (await file.exists())
@@ -23,7 +23,7 @@ class AgentService {
     bool exist = false;
     for (var agent in agents)
     {
-      if ((email == agent["email"]) && (motDePasse == agent["mot_de_passe"]) && (agent["estActif"] == true))
+      if ((emailAgent == agent["email"]) && (motDePasse == agent["mot_de_passe"]) && (agent["estActif"] == true))
       {
         exist = true;
         break; 
